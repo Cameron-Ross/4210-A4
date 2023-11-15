@@ -1,4 +1,4 @@
-#-------------------------------------------------------------------------
+#------------------------------------------------------------*/
 # AUTHOR: Cameron Ross
 # FILENAME: deep_learning.py
 # SPECIFICATION: Question 3
@@ -88,9 +88,3 @@ pd.DataFrame(best_history.history).plot(figsize=(8, 5))
 plt.grid(True)
 plt.gca().set_ylim(0, 1) # set the vertical range to [0-1]
 plt.show()
-
-
-
-
-# Questions
-    # How to get n_neurons_output? Is it the anount of classes?

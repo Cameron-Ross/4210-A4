@@ -43,7 +43,7 @@ for i in range(len(n)):
                 clf = Perceptron(eta0=n[i], shuffle=r[j], max_iter=1000)    
             else:
                 # hidden_layer_sizes = number of neurons in the ith hidden layer,
-                clf = MLPClassifier(activation='logistic', max_iter=1000, learning_rate_init=n[i], shuffle=r[j])                           
+                clf = MLPClassifier(hidden_layer_sizes=25, activation='logistic', max_iter=1000, learning_rate_init=n[i], shuffle=r[j])                           
             #Fit the Neural Network to the training data
             clf.fit(X_training, y_training)
             # Make the prediction for each test sample
@@ -71,10 +71,3 @@ for i in range(len(n)):
                     if (best_multi_lr != None): print(f"Highest MLP accuracy so far: {highest_multi_accuracy}, Parameters: learning rate={best_multi_lr}, shuffle={best_multi_shuf}")
                     print('-----------------------------------------------------------------------------------------------')
 
-
-
-# Questions
-    # Print the learning rate and shuffle of each algo (so need to keep track seperately)
-    # Calculate both accuracies seperately correct??
-    # hidden_layer_sizes - how do you calculate
-    # is r for shuffle?
