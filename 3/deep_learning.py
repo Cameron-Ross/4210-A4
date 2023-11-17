@@ -60,11 +60,6 @@ for i in range(len(n_hidden)):
                 if predictions[p] == y_test[p]: 
                     correct_preds = correct_preds + 1
             current_accuracy = correct_preds / len(predictions)
-            print("**************")
-            print(predictions)
-            print(y_test)
-            print("**************")
-            #-->add your Pyhton code here
             if current_accuracy >= highest_accuracy:
                 highest_accuracy = current_accuracy
                 best_model = model
